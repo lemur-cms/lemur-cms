@@ -1,0 +1,6 @@
+venv
+media
+.vscode
+lemur_db
+settings.py
+node_modules
