@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.conf.urls import url
 
-from app.articles import views
+from lemur_cms.articles import views
 
 
 app_name = 'articles'

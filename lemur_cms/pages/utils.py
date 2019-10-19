@@ -1,4 +1,4 @@
-from app.pages import models
+from lemur_cms.pages import models
 
 def get_available_renderers():
     renderers = {

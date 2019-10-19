@@ -4,7 +4,7 @@ from django import template
 from django.db.models import Q
 from django.utils.translation import get_language
 
-from app.pages.models import Page
+from lemur_cms.pages.models import Page
 
 
 register = template.Library()

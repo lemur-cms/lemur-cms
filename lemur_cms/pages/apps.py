@@ -6,5 +6,5 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class PagesConfig(AppConfig):
-    name = 'app.pages'
+    name = 'lemur_cms.pages'
     verbose_name = capfirst(_('pages'))

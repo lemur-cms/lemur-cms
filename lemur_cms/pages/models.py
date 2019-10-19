@@ -11,7 +11,7 @@ from feincms3.pages import AbstractPage
 from feincms3.plugins import image, richtext
 from django.shortcuts import get_object_or_404
 from content_editor.contents import contents_for_item
-from app.pages.utils import get_available_renderers
+from lemur_cms.pages.utils import get_available_renderers
 import json
 
 

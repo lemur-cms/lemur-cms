@@ -6,5 +6,5 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class ArticlesConfig(AppConfig):
-    name = 'app.articles'
+    name = 'lemur_cms.articles'
     verbose_name = capfirst(_('articles'))

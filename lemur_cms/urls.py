@@ -8,5 +8,5 @@ urlpatterns = static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT,
 ) + [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('app.pages.urls')),
+    url(r'', include('lemur_cms.pages.urls')),
 ]

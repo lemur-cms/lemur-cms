@@ -4,7 +4,7 @@ from django.conf.urls import url
 from django.urls import path, include
 from django.http import HttpResponseRedirect
 from rest_framework import routers
-from app.pages import views
+from lemur_cms.pages import views
 
 router = routers.DefaultRouter()
 router.register(r'pages', views.PageViewSet, 'page')

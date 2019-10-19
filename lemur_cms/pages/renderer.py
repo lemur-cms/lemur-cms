@@ -2,7 +2,7 @@ from django.utils.html import mark_safe
 
 from feincms3.renderer import TemplatePluginRenderer
 
-from app.pages import models
+from lemur_cms.pages import models
 
 
 renderer = TemplatePluginRenderer()
