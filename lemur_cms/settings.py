@@ -68,7 +68,6 @@ MIDDLEWARE = MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'feincms3.apps.apps_middleware',
 ]
 
 ROOT_URLCONF = 'lemur_cms.urls'

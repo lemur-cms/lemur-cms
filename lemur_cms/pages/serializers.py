@@ -11,5 +11,5 @@ class PageSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Page
-        fields = ("title", "regions")
+        fields = '__all__'
 
