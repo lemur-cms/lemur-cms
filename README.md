@@ -14,8 +14,8 @@ cd lemur-cms
 Setup a virtualenv:
 
 ```bash
-python -p python3 venv
-. venv/bin/activate
+virtualenv -p python3 venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -24,20 +24,20 @@ There is a sqlite database called lemur_db by default.
 Run migrations and create a superuser:
 
 ```bash
-./manage.py migrate
-./manage.py createsuperuser
+python manage.py migrate
+python manage.py createsuperuser
 ```
 
 Import the fixtures:
 
 ```bash
-./manage.py loaddata fixtures/pages.json
+python manage.py loaddata fixtures/pages.json
 ```
 
 Start backend server:
 
 ```bash
-./manage.py runserver
+python manage.py runserver
 ```
 
 Install **React** frontend:
