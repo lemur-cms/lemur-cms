@@ -2,18 +2,42 @@
 
 ## Installation
 
+
 Be sure you have installed **npm and node**.
 
 Clone this repository:
 
-```bash
+```shell script
 git clone https://github.com/lemur-cms/lemur-cms
 cd lemur-cms
 ```
+### Installation - using make
+
+Run installtion:
+```shell script
+make install
+```
+
+Then run backend server:
+
+```shell script
+make run_backend:
+```
+
+And React frontend server:
+
+```shell script
+make run_frontend:
+```
+
+Visit REST API on ``http://localhost:8000/api/``.  
+Open ``http://localhost:3000/`` and enjoy React!
+
+### Installation - step by step
 
 Setup a virtualenv:
 
-```bash
+```shell script
 virtualenv -p python3 venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -23,35 +47,33 @@ There is a sqlite database called lemur_db by default.
 
 Run migrations and create a superuser:
 
-```bash
+```shell script
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
 Import the fixtures:
 
-```bash
+```shell script
 python manage.py loaddata fixtures/pages.json
+python manage.py loaddata fixtures/articles.json
 ```
 
 Start backend server:
 
-```bash
+```shell script
 python manage.py runserver
 ```
 
 Install **React** frontend:
 
-```bash
+```shell script
 cd frontend
 npm install
 ```
 
 Start frontend server:
 
-```bash
+```shell script
 npm start
 ```
-
-Visit REST API on ``http://localhost:8000/api/``.  
-Open ``http://localhost:3000/`` and enjoy React!
