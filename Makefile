@@ -12,6 +12,7 @@ install:
 	virtualenv -p python3 venv
 	. venv/bin/activate && \
 	pip install -r requirements.txt && \
+	python manage.py makemigrations page && python manage.py migrate page && \
 	python manage.py migrate && \
 	python manage.py createsuperuser && \
 	$(MAKE) load_fixtures
