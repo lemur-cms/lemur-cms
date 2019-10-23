@@ -1,0 +1,31 @@
+<div id="header">
+    {% block header %}
+    {% for content in feincms_page.content.header %}
+        {{ content.render }}
+    {% endfor %}
+    {% endblock %}
+</div>
+
+<div id="content">
+    {% block content %}
+    {% for content in feincms_page.content.main %}
+        {{ content.render }}
+    {% endfor %}
+    {% endblock %}
+</div>
+
+<div id="sidebar">
+    {% block sidebar %}
+    {% for content in feincms_page.content.sidebar %}
+        {{ content.render }}
+    {% endfor %}
+    {% endblock %}
+</div>
+
+<div id="footer">
+    {% block footer %}
+    {% for content in feincms_page.content.footer %}
+        {{ content.render }}
+    {% endfor %}
+    {% endblock %}
+</div>

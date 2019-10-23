@@ -56,7 +56,6 @@ Import the fixtures:
 
 ```shell script
 python manage.py loaddata fixtures/pages.json
-python manage.py loaddata fixtures/articles.json
 ```
 
 Start backend server:

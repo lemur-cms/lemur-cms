@@ -34,17 +34,18 @@ class ServiceApp extends Component {
   };
   componentDidMount() {
     this.refreshList();
+    this.setState({visibleGrids: true})
   }
   refreshList = () => {
     axios
-      .get(`http://localhost:8000/api/get/pages/`)
+      .get(`http://localhost:8000/api/pages/`)
       .then(res => this.setState({ serviceList: res.data, serviceLoading: false}))
       .catch(err => console.log(err));
   };
   displayCompleted = status => {
     this.setState({serviceLoading: true})
     axios
-      .get(`http://localhost:8000/api/get/pages/?parent=${this.state.viewCompleted ? '' : '1'}`)
+      .get(`http://localhost:8000/api/pages/?parent=${this.state.viewCompleted ? '' : '3'}`)
       .then(res => this.setState({ serviceList: res.data, serviceLoading: false}))
       .catch(err => console.log(err));
     if (status) {
@@ -81,7 +82,7 @@ class ServiceApp extends Component {
         <List.Item>
           <Col span={12}>
             <h3>{item.title}</h3>
-            {/* {item.regions.map((item) => 
+            {/* {item.regions.map((item) =>
               <p>Blah{item.text}</p>
             )} */}
           </Col>

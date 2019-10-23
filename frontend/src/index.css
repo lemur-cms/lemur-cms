@@ -1,4 +1,6 @@
 @import '~antd/dist/antd.css';
+@import '~react-grid-layout/css/styles.css';
+@import '~react-resizable/css/styles.css';
 
 body {
   margin: 0;
@@ -14,4 +16,8 @@ body {
 
 .ant-list-item .completed {
   text-decoration: line-through;
+}
+
+.page-widget {
+  border: 1px solid #000;
 }

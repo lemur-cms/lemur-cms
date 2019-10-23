@@ -1,7 +1,9 @@
 venv
 media
+static
 .vscode
 .idea
 lemur_db
 node_modules
 *.pyc
+*._*

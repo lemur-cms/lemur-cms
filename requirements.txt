@@ -1,6 +1,10 @@
 Django
-feincms3[all]
-psycopg2-binary
-django-filter
+feincms
 djangorestframework
 django-cors-headers
+django-extensions
+easy_thumbnails
+psycopg2-binary
+django-filter
+python-app-loader
+six
