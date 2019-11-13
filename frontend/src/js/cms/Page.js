@@ -1,14 +1,12 @@
 import React from "react";
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+import { Link } from "react-router-dom";
 import ReactSafeHtml from "react-safe-html";
-import axios from "axios";
-import BaseRoutes from "./BaseRoutes";
-import { Layout, Menu, Breadcrumb, Icon, Row, Col } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import List from "../components/List";
 import Form from "../components/Form";
 import Post from "../components/Posts";
-import {connect} from "react-redux";
-import {getData, getPageData} from "../actions/index";
+import { connect } from "react-redux";
+import { getPageData } from "../actions/index";
 
 const { SubMenu } = Menu;
 

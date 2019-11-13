@@ -1,11 +1,7 @@
 import React from "react";
-import { connect } from 'react-redux';
 import { Link, Route, Switch} from "react-router-dom";
-import ReactSafeHtml from "react-safe-html";
 import axios from "axios";
 import Page from "./Page";
-import List from "../components/List";
-import Form from "../components/Form";
 
 class BaseRoutes extends React.Component {
   constructor(props) {
