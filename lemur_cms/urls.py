@@ -18,7 +18,7 @@ urlpatterns += lemur_cms.urlpatterns
 
 urlpatterns += [
     url(r'^admin/', admin.site.urls),
-    url('^api/', include(router.urls)),
+    url(r'^api/', include(router.urls)),
     url(r'', include('feincms.contrib.preview.urls')),
     url(r'', include('feincms.urls'))
 ] + static(

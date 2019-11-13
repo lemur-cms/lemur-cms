@@ -1,7 +1,7 @@
 // frontend/src/App.js
 
 import React, { Component } from "react";
-import ServiceModalForm from "./components/ServiceModal";
+import ServiceModalForm from "./js/components/ServiceModal";
 import axios from "axios";
 
 import {
@@ -136,11 +136,9 @@ class ServiceApp extends Component {
   render() {
     return (
       <div>
-        <Row gutter={[24, 24]}>
+        <Row gutter={[24, 0]}>
           <Col span={24}>
             <h1>Service app - {this.state.serviceList.length}</h1>
-          </Col>
-          <Col span={24}>
             <Button type="primary" onClick={this.createItem}>
               Add service
             </Button>

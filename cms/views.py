@@ -17,7 +17,7 @@ class PageViewSet(viewsets.ModelViewSet):
     queryset = Page.objects.all()
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
     # pagination_class = StandardResultsSetPagination
-    filterset_fields = ('title', 'parent', 'in_navigation', 'language', 'active')
+    filterset_fields = ('title', 'parent', 'in_navigation', 'language', 'active', '_cached_url')
     ordering_fields = ('id', 'title', 'parent')
     ordering = 'title'
 

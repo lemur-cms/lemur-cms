@@ -13,10 +13,10 @@ Page.register_templates({
     'title': _('LemurCMS default template'),
     'path': 'base.html',
     'regions': (
-        ('header', _('Page header.'), 'inherited'),
-        ('main', _('Main content area.')),
+        ('header', _('Page header'), 'inherited'),
+        ('main', _('Main content area')),
         ('sidebar', _('Sidebar'), 'inherited'),
-        ('footer', _('Page footer.'), 'inherited'),
+        ('footer', _('Page footer'), 'inherited'),
     ),
 })
 
@@ -40,6 +40,7 @@ COLUMN_CHOICES = (
     (11, '11'),
     (DEFAULT_WIDTH, '12'),
 )
+
 
 class Widget(models.Model):
     """

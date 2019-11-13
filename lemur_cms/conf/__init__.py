@@ -10,8 +10,8 @@ class Default(object):
         return [
             # feincms defaults
             'feincms',
-            'feincms.module.page',
             'feincms.module.medialibrary',
+            'feincms.module.page',
             # django defaults
             'django.contrib.admin',
             'django.contrib.auth',
